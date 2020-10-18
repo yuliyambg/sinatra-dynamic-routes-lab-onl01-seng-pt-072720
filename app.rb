@@ -20,7 +20,7 @@ get 'say/:number/:phrase' do
 end
 
 
-
+get '/:operation/:number1/:number2' do
 case @operation
 when "add"
 @num1 + @num2
@@ -30,6 +30,7 @@ when "multiply"
 @num1 * @num2
 when "divide"
 @num1 / @num2
+end
 end
 
 end
