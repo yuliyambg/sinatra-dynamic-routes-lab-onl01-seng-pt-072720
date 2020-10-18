@@ -16,11 +16,9 @@ end
 get 'say/:number/:phrase' do
 @number = params[:number].to_i
 @phrase = params[:phrase]
-"#{@number}+#{@phrase}"
+"#{@phrase*@number}"
 end
 
-<% phrase_array = [] %>
-<% @number.times {|x| phrase_array << @phrase} %>
-<%= phrase_array.join(" ") %>
+
 
 end
