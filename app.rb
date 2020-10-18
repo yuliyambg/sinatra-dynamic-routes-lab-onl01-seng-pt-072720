@@ -19,4 +19,8 @@ get 'say/:number/:phrase' do
 "#{@number}+#{@phrase}"
 end
 
+<% phrase_array = [] %>
+<% @number.times {|x| phrase_array << @phrase} %>
+<%= phrase_array.join(" ") %>
+
 end
