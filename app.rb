@@ -20,6 +20,7 @@ get 'say/:number/:phrase' do
 end
 
 
+
 get '/:operation/:number1/:number2' do
 @operation = params[:operation]
 @number1 = params[:number1].to_i
