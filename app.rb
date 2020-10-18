@@ -16,6 +16,7 @@ end
 get 'say/:number/:phrase' do
 @number = params[:number].to_i
 @phrase = params[:phrase]
+puts "#{@phrase*@number}"
 "#{@phrase*@number}"
 end
 
