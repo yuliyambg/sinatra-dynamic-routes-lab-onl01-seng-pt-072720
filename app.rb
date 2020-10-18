@@ -13,5 +13,10 @@ get '/square/:number' do
 "#{@number*@number}"
 end
 
+get 'say/:number/:phrase' do
+@number = params[:number].to_i
+@phrase = params[:phrase]
+"#{@number}+#{@phrase}"
+end
 
 end
